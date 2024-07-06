@@ -187,7 +187,7 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/musicplayer.jpeg"),
-      projectName: "ecommerce website",
+      projectName: "Music Player",
       projectDesc: "Designed and developed a fully functional music player platform using Django, a high-level Python web framework.Enhanced user experience with intuitive UI/UX design.Technologies Used : Django, Python, HTML, CSS, JavaScript, Bootstrap, MySQL.",
       footerLink: [
         {
