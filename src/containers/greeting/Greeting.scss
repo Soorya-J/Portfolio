@@ -60,6 +60,9 @@
   display: inline-block;
   transform-origin: 70% 70%;
 }
+.dark-mode{
+  color: white !important;
+}
 
 @keyframes wave {
   0% {
@@ -97,6 +100,7 @@
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
+    flex-direction: column;
   }
   .greeting-text {
     font-size: 30px;

@@ -9,8 +9,13 @@ export default function StartupProject() {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    var win = window.open(url);
+    if (win) {
+      win.focus();
+    } else {
+      console.error("Failed to open URL. It might be blocked by a pop-up blocker.");
+    }
+    
   }
 
   const {isDark} = useContext(StyleContext);
