@@ -22,7 +22,7 @@ const greeting = {
   username: "Soorya J",
   title: "Hi all, I'm Soorya J",
   subTitle: emoji(
-    "A Python Full Stack Developer 🐍 passionate about crafting robust Web and Mobile applications using Django and other powerful Python frameworks alongside modern front-end technologies like React.js"
+    "A Python Full Stack Developer passionate about crafting robust Web and Mobile applications using Django and other powerful Python frameworks alongside modern front-end technologies like React.js"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
