@@ -122,7 +122,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false
@@ -133,7 +133,7 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "Facebook",
+      company: "Zigbill Software Solutions",
       companylogo: require('./assets/images/Keltron.jpg'),
       date: "June 2018 - Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -284,7 +284,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  number: "+91-8921238089",
+  number: "+91 8921238089",
   email_address: "sooryajsoorya@gmail.com"
 };
 
