@@ -5,12 +5,12 @@ import splashAnimation from "./assets/lottie/splashAnimation";
 const splashScreen = {
   enabled: true,
   animation: splashAnimation,
-  duration: 2000,
+  duration: 2000
 };
 
 // Illustration
 const illustration = {
-  animated: true,
+  animated: true
 };
 
 // Greeting Section
@@ -22,7 +22,7 @@ const greeting = {
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-  displayGreeting: true,
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -30,7 +30,7 @@ const socialMediaLinks = {
   github: "https://github.com/Soorya-J",
   linkedin: "https://www.linkedin.com/in/soorya-j-13707525a/",
   gmail: "sooryajbusinessmail@gmail.com",
-  display: true,
+  display: true
 };
 
 // Skills Section
@@ -47,16 +47,16 @@ const skillsSection = {
     emoji("⚡ Develop cross-platform mobile apps using .NET MAUI (MVVM)")
   ],
   softwareSkills: [
-    { skillName: "C#", fontAwesomeClassname: "fas fa-code" },
-    { skillName: ".NET Core", fontAwesomeClassname: "fas fa-laptop-code" },
-    { skillName: "Angular", fontAwesomeClassname: "fab fa-angular" },
-    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "SQL Server", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" }
+    {skillName: "C#", fontAwesomeClassname: "fas fa-code"},
+    {skillName: ".NET Core", fontAwesomeClassname: "fas fa-laptop-code"},
+    {skillName: "Angular", fontAwesomeClassname: "fab fa-angular"},
+    {skillName: "React", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "SQL Server", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft"},
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"}
   ],
-  display: true,
+  display: true
 };
 
 // Education Section
@@ -84,12 +84,12 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "Backend (.NET Core)", progressPercentage: "85%" },
-    { Stack: "Frontend (Angular)", progressPercentage: "75%" },
-    { Stack: "Database (SQL Server)", progressPercentage: "80%" },
-    { Stack: "Cloud (Azure)", progressPercentage: "70%" }
+    {Stack: "Backend (.NET Core)", progressPercentage: "85%"},
+    {Stack: "Frontend (Angular)", progressPercentage: "75%"},
+    {Stack: "Database (SQL Server)", progressPercentage: "80%"},
+    {Stack: "Cloud (Azure)", progressPercentage: "70%"}
   ],
-  displayCodersrank: false,
+  displayCodersrank: false
 };
 
 // Work Experience
@@ -143,7 +143,7 @@ const achievementSection = {
       imageAlt: "AI Certification"
     }
   ],
-  display: true,
+  display: true
 };
 
 // Contact Section

@@ -13,9 +13,10 @@ export default function StartupProject() {
     if (win) {
       win.focus();
     } else {
-      console.error("Failed to open URL. It might be blocked by a pop-up blocker.");
+      console.error(
+        "Failed to open URL. It might be blocked by a pop-up blocker."
+      );
     }
-    
   }
 
   const {isDark} = useContext(StyleContext);
