@@ -1,300 +1,176 @@
-
-
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
-
 const splashScreen = {
-  enabled: true, 
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000
+  duration: 2000,
 };
 
-// Summary And Greeting Section
-
+// Illustration
 const illustration = {
-  animated: true
+  animated: true,
 };
 
+// Greeting Section
 const greeting = {
   username: "Soorya J",
   title: "Hi all, I'm Soorya J",
   subTitle: emoji(
-    "Software Engineer with 2+ years of experience in C#, .NET Core, ASP.NET Core Web API, and SQL Server, building enterprise-grade RESTful APIs using Clean Architecture. Skilled in third-party API integration, Azure deployment, Angular.js frontend development, and .NET MAUI mobile app development. Strong understanding of Agile, SDLC, performance optimization, and scalable system design."),
+    "Software Engineer with 2+ years of experience in C#, .NET Core, ASP.NET Core Web API, and SQL Server. I build scalable RESTful APIs using Clean Architecture and deploy enterprise applications on Microsoft Azure. Experienced in Angular frontend development, .NET MAUI mobile apps, Meta API integrations, AI features, OCR processing, and performance optimization."
+  ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-  displayGreeting: true
+  displayGreeting: true,
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/Soorya-J",
-  linkedin: "https://www.linkedin.com/in/Soorya J/",
-  gmail: "sooryajsoorya@gmail.com",
-  facebook: "https://www.facebook.com/Soorya J",
-  display: true 
+  linkedin: "https://www.linkedin.com/in/soorya-j-13707525a/",
+  gmail: "sooryajbusinessmail@gmail.com",
+  display: true,
 };
 
 // Skills Section
-
 const skillsSection = {
-  title: "What I do",
-  subTitle: "A Crazy Full Stack Developer  on a mission to explore every tech stack under the sun, from Django and Flask to React.js, Vue.js, and beyond!",
+  title: "What I Do",
+  subTitle:
+    "Full Stack .NET Developer specializing in scalable backend APIs, cloud deployment, and modern frontend applications.",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    )
+    emoji("⚡ Develop secure and scalable RESTful APIs using ASP.NET Core"),
+    emoji("⚡ Design SQL Server databases with query optimization"),
+    emoji("⚡ Deploy backend services on Microsoft Azure App Services"),
+    emoji("⚡ Build responsive UI using Angular"),
+    emoji("⚡ Integrate Meta APIs, Webhooks, AI & OCR features"),
+    emoji("⚡ Develop cross-platform mobile apps using .NET MAUI (MVVM)")
   ],
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Django",
-      fontAwesomeClassname:"fas fa-project-diagram"
-    }
+    { skillName: "C#", fontAwesomeClassname: "fas fa-code" },
+    { skillName: ".NET Core", fontAwesomeClassname: "fas fa-laptop-code" },
+    { skillName: "Angular", fontAwesomeClassname: "fab fa-angular" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "SQL Server", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" }
   ],
-  display: true
+  display: true,
 };
 
 // Education Section
-
 const educationInfo = {
   display: true,
   schools: [
     {
-      schoolName: "University Of Kerala",
+      schoolName: "University of Kerala",
       logo: require("./assets/images/Kerala_University.png"),
-      subHeader: "Bachelor of Science in Physics",
-      duration: "September 2019 - April 2022",
-      desc: "Achieved a  CGPA score of 7.0"
+      subHeader: "Bachelor's Degree – Physics",
+      duration: "August 2019 – April 2022",
+      desc: "Completed Bachelor's degree in Physics."
     },
     {
-      schoolName: "Keltron,Thiruvananthapuram",
+      schoolName: "Keltron, Thiruvananthapuram",
       logo: require("./assets/images/Keltron.jpg"),
-      subHeader: "Diploma in Python Full Stack Development",
-      duration: "March 2023 - March 2024",
-      desc: "Achieved a score of 86 percentage"
+      subHeader: "Diploma in Full Stack Development",
+      duration: "March 2023 – February 2024",
+      desc: "Full Stack Development with focus on Backend & APIs."
     }
   ]
 };
 
+// Tech Stack
 const techStack = {
-  viewSkillBars: true, 
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", 
-      progressPercentage: "60%" 
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "70%"
-    }
+    { Stack: "Backend (.NET Core)", progressPercentage: "85%" },
+    { Stack: "Frontend (Angular)", progressPercentage: "75%" },
+    { Stack: "Database (SQL Server)", progressPercentage: "80%" },
+    { Stack: "Cloud (Azure)", progressPercentage: "70%" }
   ],
-  displayCodersrank: false
+  displayCodersrank: false,
 };
 
+// Work Experience
 const workExperiences = {
-  display: false,
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Zigbill Software Solutions",
-      companylogo: require('./assets/images/Keltron.jpg'),
-      date: "June 2018 - Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Engineer (.NET Core | Angular | SQL Server)",
+      company: "Zigbill Software Solutions Pvt Ltd",
+      companylogo: require("./assets/images/Keltron.jpg"),
+      date: "July 2024 – Present",
+      desc: "Developing enterprise-grade backend APIs and scalable systems.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and developed RESTful Web APIs using ASP.NET Core",
+        "Integrated Meta (Facebook) APIs with webhook-based lead workflows",
+        "Implemented centralized logging and global exception handling",
+        "Deployed backend services on Microsoft Azure App Services",
+        "Integrated AI summaries and OCR-based intelligent data processing",
+        "Followed Clean Architecture and SOLID principles"
       ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require('./assets/images/Keltron.jpg'),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Developer Intern (Python Django | Angular)",
+      company: "Hesper Tech Private Limited",
+      companylogo: require("./assets/images/Keltron.jpg"),
+      date: "September 2023 – March 2024",
+      desc: "Worked on Engineering Project Management System.",
+      descBullets: [
+        "Developed REST APIs using Python Django",
+        "Built Angular dashboards for reporting and tracking",
+        "Integrated SQL Server using Django ORM",
+        "Implemented logging and performance monitoring"
+      ]
     }
   ]
 };
 
-
-const openSource = {
-  showGithubProfile: "true", 
-  display: true
-};
-
-
-const bigProjects = {
-  title: "Projects",
-  subtitle: "",
-  projects: [
-    {
-      image: require("./assets/images/youtube.jpg"),
-      projectName: "Youtube Clone",
-      projectDesc: "Developed a Youtube Clone using Vite+React.Implemented a responsive layout ensuring seamless user experience across various devices, from desktops to mobile devices. Technologies used: Vite,React,JavascriptES6, RESTful APIs",
-      footerLink: [
-        {
-          name: "Visit",
-          url: "https://github.com/Soorya-J/Youtube-clone"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/weather.jpg"),
-      projectName: "WEATHER FORCAST APPLICATION",
-      projectDesc: "Developed a dynamic responsive weather application using React,leveraging APIs to fetch realtime weather data and presenting it tousers in an intuitive and visually appealing manner Technologies Used: React, JavaScript, HTML, CSS, RESTful APIs",
-      footerLink: [
-        {
-          name: "Visit",
-          url: "https://soorya-j.github.io/Weather_Forcast/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/musicplayer.jpeg"),
-      projectName: "Music Player",
-      projectDesc: "Designed and developed a fully functional music player platform using Django, a high-level Python web framework.Enhanced user experience with intuitive UI/UX design.Technologies Used : Django, Python, HTML, CSS, JavaScript, Bootstrap, MySQL.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://www.youtube.com/"
-        }
-      ]
-    } 
-  ],
-  display: true
-};
-
-// Achievement Section
-
+// Achievements
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Achievements & Certifications 🏆"),
+  subtitle: "Certifications and Technical Contributions",
   achievementsCards: [
     {
-      title: "Keltron Python Full-Stack Developer",
+      title: "Meta API Integration Certification",
       image: require("./assets/images/Keltron.jpg"),
-      imageAlt: "Keltron",
-      footerLink: [
-        {
-          name: "Certificate",
-          url: "https://drive.google.com"
-        }
-      ]
-    }
-  ],
-  display: true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  displayMediumBlogs: "false",
-  blogs: [
-    {
-      url: "",
-      title: "Why Python?",
-      description:
-        "Python has become one of the most popular programming languages, and for good reasons"
+      imageAlt: "Meta API"
     },
     {
-      url: "",
-      title: "Diving into React",
-      description:
-        "React has become a dominant force in front-end development for several compelling reasons:"
+      title: "Agentic AI in Action 2025",
+      image: require("./assets/images/Keltron.jpg"),
+      imageAlt: "AI Certification"
     }
   ],
+  display: true,
 };
 
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false
+// Contact Section
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  number: "+91 8921238089",
+  email_address: "sooryajbusinessmail@gmail.com"
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
   display: true
 };
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  number: "+91 8921238089",
-  email_address: "sooryajsoorya@gmail.com"
-};
-
-// Twitter Section
 
 const twitterDetails = {
   userName: "Soorya_RJ",
+  display: false
+};
+
+const openSource = {
+  showGithubProfile: true,
   display: true
 };
 
-const isHireable = false;
+const isHireable = true;
 
 export {
   illustration,
@@ -306,11 +182,7 @@ export {
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
