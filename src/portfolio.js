@@ -1,173 +1,242 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
 
-// Splash Screen
+/* Splash Screen */
 const splashScreen = {
   enabled: true,
   animation: splashAnimation,
   duration: 2000
 };
 
-// Illustration
+/* Illustration */
 const illustration = {
   animated: true
 };
 
-// Greeting Section
+/* Greeting Section */
 const greeting = {
   username: "Soorya J",
   title: "Hi all, I'm Soorya J",
   subTitle: emoji(
-    "Software Engineer with 2+ years of experience in C#, .NET Core, ASP.NET Core Web API, and SQL Server. I build scalable RESTful APIs using Clean Architecture and deploy enterprise applications on Microsoft Azure. Experienced in Angular frontend development, .NET MAUI mobile apps, Meta API integrations, AI features, OCR processing, and performance optimization."
+    "Software Engineer with 2+ years of experience in C#, .NET Core, ASP.NET Core Web API, and SQL Server. Experienced in building scalable RESTful APIs using Clean Architecture, integrating third-party APIs, deploying applications to Azure, and developing Angular frontends and .NET MAUI mobile applications."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+    "https://drive.google.com/file/d/1VJjuqac6uhzANrT1GYKtB-oaUjHu3mBH/view?usp=sharing",
   displayGreeting: true
 };
 
-// Social Media Links
+/* Social Media Links */
 const socialMediaLinks = {
   github: "https://github.com/Soorya-J",
-  linkedin: "https://www.linkedin.com/in/soorya-j-13707525a/",
-  gmail: "sooryajbusinessmail@gmail.com",
+  linkedin: "https://www.linkedin.com/in/soorya-j/",
+  gmail: "sooryajsoorya@gmail.com",
+  facebook: "https://www.facebook.com/",
   display: true
 };
 
-// Skills Section
+/* Skills Section */
 const skillsSection = {
-  title: "What I Do",
+  title: "What I do",
   subTitle:
-    "Full Stack .NET Developer specializing in scalable backend APIs, cloud deployment, and modern frontend applications.",
+    "Full Stack .NET Developer building enterprise applications using modern backend and frontend technologies.",
   skills: [
-    emoji("⚡ Develop secure and scalable RESTful APIs using ASP.NET Core"),
-    emoji("⚡ Design SQL Server databases with query optimization"),
-    emoji("⚡ Deploy backend services on Microsoft Azure App Services"),
-    emoji("⚡ Build responsive UI using Angular"),
-    emoji("⚡ Integrate Meta APIs, Webhooks, AI & OCR features"),
-    emoji("⚡ Develop cross-platform mobile apps using .NET MAUI (MVVM)")
+    emoji("⚡ Build scalable RESTful APIs using ASP.NET Core Web API"),
+    emoji("⚡ Design Clean Architecture based enterprise applications"),
+    emoji("⚡ Develop Angular frontends and .NET MAUI mobile apps"),
+    emoji("⚡ Deploy and manage applications on Microsoft Azure")
   ],
   softwareSkills: [
-    {skillName: "C#", fontAwesomeClassname: "fas fa-code"},
-    {skillName: ".NET Core", fontAwesomeClassname: "fas fa-laptop-code"},
-    {skillName: "Angular", fontAwesomeClassname: "fab fa-angular"},
-    {skillName: "React", fontAwesomeClassname: "fab fa-react"},
-    {skillName: "SQL Server", fontAwesomeClassname: "fas fa-database"},
-    {skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft"},
-    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
-    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"}
+    { skillName: "C#", fontAwesomeClassname: "fas fa-code" },
+    { skillName: ".NET Core", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "SQL Server", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Angular", fontAwesomeClassname: "fab fa-angular" },
+    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" }
   ],
   display: true
 };
 
-// Education Section
+/* Education Section */
 const educationInfo = {
   display: true,
   schools: [
     {
-      schoolName: "University of Kerala",
+      schoolName: "University Of Kerala",
       logo: require("./assets/images/Kerala_University.png"),
-      subHeader: "Bachelor's Degree – Physics",
-      duration: "August 2019 – April 2022",
-      desc: "Completed Bachelor's degree in Physics."
+      subHeader: "Bachelor of Science in Physics",
+      duration: "September 2019 - April 2022",
+      desc: "Achieved a CGPA score of 7.0"
     },
     {
       schoolName: "Keltron, Thiruvananthapuram",
       logo: require("./assets/images/Keltron.jpg"),
-      subHeader: "Diploma in Full Stack Development",
-      duration: "March 2023 – February 2024",
-      desc: "Full Stack Development with focus on Backend & APIs."
+      subHeader: "Diploma in Python Full Stack Development",
+      duration: "March 2023 - March 2024",
+      desc: "Achieved a score of 86 percentage"
     }
   ]
 };
 
-// Tech Stack
+/* Tech Stack */
 const techStack = {
   viewSkillBars: true,
   experience: [
-    {Stack: "Backend (.NET Core)", progressPercentage: "85%"},
-    {Stack: "Frontend (Angular)", progressPercentage: "75%"},
-    {Stack: "Database (SQL Server)", progressPercentage: "80%"},
-    {Stack: "Cloud (Azure)", progressPercentage: "70%"}
+    { Stack: "Backend (.NET Core)", progressPercentage: "80%" },
+    { Stack: "Frontend (Angular)", progressPercentage: "70%" },
+    { Stack: "Database (SQL Server)", progressPercentage: "75%" }
   ],
   displayCodersrank: false
 };
 
-// Work Experience
+/* Work Experience */
 const workExperiences = {
   display: true,
   experience: [
     {
-      role: "Software Engineer (.NET Core | Angular | SQL Server)",
-      company: "Zigbill Software Solutions Pvt Ltd",
-      companylogo: require("./assets/images/Keltron.jpg"),
-      date: "July 2024 – Present",
-      desc: "Developing enterprise-grade backend APIs and scalable systems.",
+      role: "Software Engineer",
+      company: "Zigbill Software Solutions",
+      companylogo: require("./assets/images/zigbill.jpg"),
+      date: "July 2024 - Present",
+      desc:
+        "Working on enterprise-grade .NET applications with Clean Architecture.",
       descBullets: [
-        "Designed and developed RESTful Web APIs using ASP.NET Core",
-        "Integrated Meta (Facebook) APIs with webhook-based lead workflows",
-        "Implemented centralized logging and global exception handling",
-        "Deployed backend services on Microsoft Azure App Services",
-        "Integrated AI summaries and OCR-based intelligent data processing",
-        "Followed Clean Architecture and SOLID principles"
+        "Developed and maintained ASP.NET Core Web APIs",
+        "Integrated third-party APIs and payment gateways",
+        "Optimized SQL queries and improved performance",
+        "Deployed applications to Azure Cloud"
       ]
     },
     {
-      role: "Software Developer Intern (Python Django | Angular)",
+      role: "Software Developer Intern (Python Django | Angular | SQL Server)",
       company: "Hesper Tech Private Limited",
-      companylogo: require("./assets/images/Keltron.jpg"),
+      companylogo: require("./assets/images/hesper.jpg"),
       date: "September 2023 – March 2024",
-      desc: "Worked on Engineering Project Management System.",
+      desc:
+        "Contributed to the development of an Engineering Project Management System for tracking product development and manufacturing workflows.",
       descBullets: [
-        "Developed REST APIs using Python Django",
-        "Built Angular dashboards for reporting and tracking",
-        "Integrated SQL Server using Django ORM",
-        "Implemented logging and performance monitoring"
+        "Developed backend REST APIs using Python Django for project allocation and workflow management",
+        "Built responsive dashboards and UI components using Angular",
+        "Integrated SQL Server with Django ORM for managing project and employee data",
+        "Implemented centralized logging, structured error handling, and performance monitoring to improve production stability"
       ]
     }
   ]
 };
 
-// Achievements
+/* Open Source */
+const openSource = {
+  showGithubProfile: true,
+  display: true
+};
+
+/* Big Projects */
+const bigProjects = {
+  title: "Projects",
+  subtitle: "Some of my featured projects",
+  projects: [
+    {
+      image: require("./assets/images/youtube.jpg"),
+      projectName: "Youtube Clone",
+      projectDesc:
+        "Developed a YouTube Clone using Vite + React with responsive design and REST API integration.",
+      footerLink: [
+        {
+          name: "Visit",
+          url: "https://github.com/Soorya-J/Youtube-clone"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/weather.jpg"),
+      projectName: "Weather Forecast Application",
+      projectDesc:
+        "Responsive weather application using React and REST APIs to fetch real-time weather data.",
+      footerLink: [
+        {
+          name: "Visit",
+          url: "https://soorya-j.github.io/Weather_Forcast/"
+        }
+      ]
+    }
+  ],
+  display: false
+};
+
+/* Achievement Section */
 const achievementSection = {
-  title: emoji("Achievements & Certifications 🏆"),
-  subtitle: "Certifications and Technical Contributions",
+  title: emoji("Achievements And Certifications 🏆 "),
+  subtitle: "Certifications and professional achievements",
   achievementsCards: [
     {
-      title: "Meta API Integration Certification",
+      title: "Keltron Python Full-Stack Developer",
+      subtitle: "Certification",
       image: require("./assets/images/Keltron.jpg"),
-      imageAlt: "Meta API"
+      imageAlt: "Keltron",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com"
+        }
+      ]
     },
     {
       title: "Agentic AI in Action 2025",
-      image: require("./assets/images/Keltron.jpg"),
-      imageAlt: "AI Certification"
+      subtitle: "Boston Institute of Analytics, Trivandrum Campus",
+      image: require("./assets/images/bia.jpg"),  
+      imageAlt: "Agentic AI Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com"
+        }
+      ]
     }
   ],
   display: true
 };
 
-// Contact Section
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  number: "+91 8921238089",
-  email_address: "sooryajbusinessmail@gmail.com"
+/* Blog Section */
+const blogSection = {
+  title: "Blogs",
+  displayMediumBlogs: false,
+  blogs: [],
+  display: false
 };
 
-// Resume Section
+/* Talk Section */
+const talkSection = {
+  title: "Talks",
+  subtitle: emoji("Sharing knowledge and learning continuously 🚀"),
+  talks: [],
+  display: false
+};
+
+/* Podcast Section */
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "Coming Soon",
+  podcast: [],
+  display: false
+};
+
+/* Resume Section */
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
   display: true
 };
 
+/* Contact */
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  number: "+91 8921238089",
+  email_address: "sooryajbusinessmail@gmail.com"
+};
+
+/* Twitter */
 const twitterDetails = {
   userName: "Soorya_RJ",
   display: false
-};
-
-const openSource = {
-  showGithubProfile: true,
-  display: true
 };
 
 const isHireable = true;
@@ -182,7 +251,11 @@ export {
   techStack,
   workExperiences,
   openSource,
+  bigProjects,
   achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
