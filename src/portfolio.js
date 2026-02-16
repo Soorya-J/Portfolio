@@ -22,8 +22,7 @@ const greeting = {
   username: "Soorya J",
   title: "Hi all, I'm Soorya J",
   subTitle: emoji(
-    "A Python Full Stack Developer passionate about crafting robust Web and Mobile applications using Django and other powerful Python frameworks alongside modern front-end technologies like React.js"
-  ),
+    "Software Engineer with 2+ years of experience in C#, .NET Core, ASP.NET Core Web API, and SQL Server, building enterprise-grade RESTful APIs using Clean Architecture. Skilled in third-party API integration, Azure deployment, Angular.js frontend development, and .NET MAUI mobile app development. Strong understanding of Agile, SDLC, performance optimization, and scalable system design."),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
   displayGreeting: true
